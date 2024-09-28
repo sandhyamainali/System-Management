@@ -1,4 +1,4 @@
-package com.tekraj.schoolmanagement;
+package com.sandhya.studentmanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
