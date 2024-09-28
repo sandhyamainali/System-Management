@@ -4,42 +4,42 @@
 	<meta charset="UTF-8">
 	<title>Student Management</title>
 	<link rel="stylesheet" th:href="@{/lib/bootstrap-5/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="css/style.css">
 </head>
 
-<>
+<body>
 	<div class="container my-2" align="center">
-		This is <span th:text="${title}"></span>
-	</div>	
 		
-		<h1 class="con">Welcome to Student Management System </h1>
-		<nav class="con">
-				<ul class="nav">
+	
+		
+		<h1 class="bg-secondary.bg-gradient top">Welcome to Student Management System </h1>
+		<nav class="bg-info.bg-gradient flex" >
+				<ul class="flex bg">
 					<li>Home</li>
 					<li>About</li>
 					<li>Facilities</li>
 					<li>StudentsInfo</li>
 					
-					<a href="/login"><button class="btn">Login</button></a>
+					<a href="/login"><button class="btn btn-primary">Login</button></a>
 					
 				</ul>
 		</nav>
 		
-		<div class="con">
-			<div class="flex">
-			<img width="1200px" src="https://www.collegedata.com/hs-fs/collegedata/images/article/being-involved-header.jpg">
-			</div>
+		<div class="img container mx-auto">
 			
+			<img width="1200px" src="https://www.collegedata.com/hs-fs/collegedata/images/article/being-involved-header.jpg">
+					
 			
 		</div>
 		
 		
-		<footer class="con">
+		<footer class="bg-body-secondary container">
 			<p class="text">This page is for Making CMS system using Spring Boot</p>
 			
 			<p class="aa">@copyright</p>
 		</footer>
 
-	
+		</div>	
 	<script  th:src="@{/lib/bootstrap-5/js/bootstrap.min.js}"></script>
 </body>
 

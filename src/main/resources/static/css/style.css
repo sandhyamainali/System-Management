@@ -1,0 +1,25 @@
+.register-container {
+            max-width: 400px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+			}
+			.btn{
+				background-color: blue;
+				color:white;
+			}
+			.ul{
+				list-style: none;
+			}
+			
+			.top{
+				font-size: 17%;
+			}
+			.img{
+				width:100%;
+			}
+			.bg{
+				background: #48CFCB;
+			}

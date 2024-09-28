@@ -25,7 +25,7 @@ public class AdminController {
     private StudentRepository studentRepository;
 	
 	@GetMapping("/")
-	public String dashboard(Model model) {
+	public String index(Model model) {
 		model.addAttribute("title","Admin");
 		return "admin/index";
 	}
