@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Management</title>
+	<link rel="stylesheet" th:href="@{/lib/bootstrap-5/css/bootstrap.min.css}" />
+</head>
+
+<>
+	<div class="container my-2" align="center">
+		This is <span th:text="${title}"></span>
+	</div>	
+		
+		<h1 class="con">Welcome to Student Management System </h1>
+		<nav class="con">
+				<ul class="nav">
+					<li>Home</li>
+					<li>About</li>
+					<li>Facilities</li>
+					<li>StudentsInfo</li>
+					
+					<a href="/login"><button class="btn">Login</button></a>
+					
+				</ul>
+		</nav>
+		
+		<div class="con">
+			<div class="flex">
+			<img width="1200px" src="https://www.collegedata.com/hs-fs/collegedata/images/article/being-involved-header.jpg">
+			</div>
+			
+			
+		</div>
+		
+		
+		<footer class="con">
+			<p class="text">This page is for Making CMS system using Spring Boot</p>
+			
+			<p class="aa">@copyright</p>
+		</footer>
+
+	
+	<script  th:src="@{/lib/bootstrap-5/js/bootstrap.min.js}"></script>
+</body>
+
+</html>
