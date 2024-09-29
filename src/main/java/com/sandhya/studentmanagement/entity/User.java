@@ -31,7 +31,6 @@ public class User {
 	@Transient 
     private String username;
 
-
 	public String getConfirmPassword() {
 		return confirmPassword;
 	}
@@ -50,7 +49,6 @@ public class User {
 	protected void onUpdate() {
 		this.updatedAt = LocalDate.now();
 	}
-	
 	
 	public Long getId() {
 		return id;

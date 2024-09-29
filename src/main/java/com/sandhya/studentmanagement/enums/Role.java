@@ -2,6 +2,6 @@ package com.sandhya.studentmanagement.enums;
 
 public enum Role {
 	ADMIN,
-	TEACHER,
+	
 	STUDENT
 }
