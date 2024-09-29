@@ -18,7 +18,7 @@ public class StudentService {
 	private StudentRepository studentRepository;
 	
 	@Transactional
-	public void softDelete(Long id) {
+	public void studentDelete(int id) {
 		Optional<Student> optionalStudent = studentRepository.findById(id);
 		if(optionalStudent.isPresent()) {
 			Student student = optionalStudent.get();
