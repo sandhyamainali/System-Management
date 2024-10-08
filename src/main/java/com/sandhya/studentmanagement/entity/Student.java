@@ -9,12 +9,12 @@ public class Student {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	public Long getId() {
+	private int id;
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -110,5 +110,9 @@ public class Student {
 	protected void onUpdate() {
 		this.updatedAt = LocalDate.now();
 	}
+
+
+
+
 	
 }

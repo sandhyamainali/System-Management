@@ -28,9 +28,11 @@
 </head>
 
 <body>
-	<div class="add">
-		<h2 class="text-center">Add</h2>
-		<form action="#" th:action="@{/admin/students/add}" method="post" th:object="${student}">
+	<div class="edit">
+		<h2 class="text-center">Edit</h2>
+
+		<form action="#" th:action="@{/admin/students/edit/{id}(id=${student.id})}" th:object="${student}"
+			method="post">
 			<div class="mb-3">
 				<label for="name" class="form-label">Name</label>
 				<input type="text" class="form-control" th:field="*{name}" required placeholder="Enter student Name" />
@@ -54,12 +56,11 @@
 				<input type="date" th:field="*{dateOfBirth}" id="dateOfBirth">
 				<br><br>
 			</div>
-			<div class="mb-3 ">
-				<button type="submit" class="btn btn-primary btn-block w-100">Add New Student</button>
-			</div>
-			<div th:if="${param.error}" class="text-danger text-center">
-				Unable to save New Student.
-			</div>
+
+			<button type="submit">Update</button>
+
+
+
 		</form>
 
 	</div>

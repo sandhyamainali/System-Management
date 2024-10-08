@@ -9,11 +9,11 @@
 		<version>3.3.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tekraj</groupId>
-	<artifactId>School-Management</artifactId>
+	<groupId>com.sandhya</groupId>
+	<artifactId>Student-Management</artifactId>
 	<version>0.0.1</version>
-	<name>School-Management</name>
-	<description>School-Management</description>
+	<name>Student-Management</name>
+	<description>Student-Management</description>
 	<url />
 	<licenses>
 		<license />
@@ -73,7 +73,23 @@
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+         <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>Management.com</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -2,7 +2,6 @@ package com.sandhya.studentmanagement.entity;
 
 import java.time.LocalDate;
 
-import com.sandhya.studentmanagement.enums.Role;
 
 import jakarta.persistence.*;
 
@@ -10,15 +9,13 @@ import jakarta.persistence.*;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 	@Column(nullable = false)
 	private String name;
 	@Column(unique = true, nullable = false)
 	private String email;
 	@Column(nullable = false)
 	private String password;
-	@Enumerated(EnumType.STRING)
-	private Role role;
 	@Column(nullable = false, updatable = false)
 	private LocalDate createdAt;
 	@Column(nullable = false)
@@ -30,6 +27,7 @@ public class User {
     private String confirmPassword;
 	@Transient 
     private String username;
+
 
 	public String getConfirmPassword() {
 		return confirmPassword;
@@ -50,11 +48,12 @@ public class User {
 		this.updatedAt = LocalDate.now();
 	}
 	
-	public Long getId() {
+	
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -82,13 +81,13 @@ public class User {
 		this.password = password;
 	}
 
-	public Role getRole() {
-		return role;
-	}
-
-	public void setRole(Role role) {
-		this.role = role;
-	}
+//	public Role getRole() {
+//		return role;
+//	}
+//
+//	public void setRole(Role role) {
+//		this.role = role;
+//	}
 
 	public LocalDate getCreatedAt() {
 		return createdAt;

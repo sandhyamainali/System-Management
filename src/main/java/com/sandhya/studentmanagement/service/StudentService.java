@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sandhya.studentmanagement.entity.Student;
+import com.sandhya.studentmanagement.entity.User;
 import com.sandhya.studentmanagement.repository.StudentRepository;
 
 import jakarta.transaction.Transactional;
@@ -26,4 +27,13 @@ public class StudentService {
 			studentRepository.save(student);
 		}
 	}
+	public void saveStudent(Student student) {
+		//validate
+		// business logic
+		// password encode
+        studentRepository.save(student); // Save the user in the database
+    }
+	
+	
+	
 }

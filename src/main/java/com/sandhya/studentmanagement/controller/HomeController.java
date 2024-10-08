@@ -18,5 +18,4 @@ public class HomeController {
 		model.addAttribute("title","About Page");
 		return "index";
 	}
-
 }

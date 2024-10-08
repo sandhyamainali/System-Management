@@ -1,5 +1,7 @@
 package com.sandhya.studentmanagement.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -40,8 +42,9 @@ public class AuthController {
         }
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
-        user.setRole(Role.STUDENT);
+//   user.setRole(Role.ADMIN);
         userService.saveUser(user); 
         return "redirect:/login"; 
     }
+    
 }

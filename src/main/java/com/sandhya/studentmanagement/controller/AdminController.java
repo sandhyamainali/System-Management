@@ -42,6 +42,8 @@ public class AdminController {
     public String listStudents(Model model) {
         List<Student> students = studentRepository.findAll(); 
         model.addAttribute("students", students);
+       
         return "admin/students/index"; 
     }
+   
 }
