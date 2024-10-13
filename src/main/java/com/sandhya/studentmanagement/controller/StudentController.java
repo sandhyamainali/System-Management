@@ -62,7 +62,7 @@ public class StudentController {
 	}
 
 	// Handle the update of an existing user
-	@PostMapping("/update/{id}")
+	@PostMapping("/edit/{id}")
     public String updateStudent(@PathVariable int id, @ModelAttribute Student updatedStudent, Model model) {
         Optional<Student> existingStudent = studentRepository.findById(id);
         if (existingStudent.isPresent()) {
@@ -71,6 +71,8 @@ public class StudentController {
             student.setAddress(updatedStudent.getAddress());
             student.setParentContactInfo(updatedStudent.getParentContactInfo());
             student.setGrade(updatedStudent.getGrade());
+            student.setAttendance(updatedStudent.getAttendance());
+//            student.setDate(updatedStudent.getDate());
           
             studentRepository.save(student); 
         }

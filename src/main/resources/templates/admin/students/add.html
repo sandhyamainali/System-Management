@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive meta tag -->
-	<title>Login Page</title>
+	<title>Add Page</title>
 	<link rel="stylesheet" th:href="@{/lib/bootstrap-5/css/bootstrap.min.css}" />
 	<style>
 		body {
@@ -54,6 +54,16 @@
 				<input type="date" th:field="*{dateOfBirth}" id="dateOfBirth">
 				<br><br>
 			</div>
+			<div class="mb-3">
+							<label for="attendance">Attendance</label>
+							<input type="text" th:field="*{attendance}" id="attendance">
+							<br><br>
+						</div>
+						<div class="mb-3">
+													<label for="date">Date</label>
+													<input type="date" th:field="*{date}" id="date">
+													<br><br>
+												</div>
 			<div class="mb-3 ">
 				<button type="submit" class="btn btn-primary btn-block w-100">Add New Student</button>
 			</div>

@@ -53,6 +53,16 @@ public class Student {
 	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
+public String attendance;
+
+
+	public String getAttendance() {
+	return attendance;
+}
+
+public void setAttendance(String attendance) {
+	this.attendance = attendance;
+}
 
 	public void setDateOfBirth(LocalDate dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
@@ -110,6 +120,8 @@ public class Student {
 	protected void onUpdate() {
 		this.updatedAt = LocalDate.now();
 	}
+
+	
 
 
 
